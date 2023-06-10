@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EAF0F5; /* Cor de fundo azul claro */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    background-color: #283551;
+    padding: 0 20px;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .social-links {
+    display: flex;
+    align-items: center;
+}
+
+nav .social-links a {
+    margin-right: 10px;
+}
+
+nav .social-links a.facebook {
+    margin-left: 10px;
+}
+
+nav .social-links a:hover {
+    color: #4CAF50;
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Cor de fundo branco */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.container h2 {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #293759; /* Cor de fundo azul meio escuro */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF; /* Cor do texto branco */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #45a049;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #293759;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #293759; /* Cor do texto azul meio escuro */
+}
+
+
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #293759; /* Cor de fundo azul meio escuro */
+    color: #FFFFFF; /* Cor do texto branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* CSS Responsivo */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
