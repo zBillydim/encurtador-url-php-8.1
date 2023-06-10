@@ -25,12 +25,12 @@
     <div class="wrapper">
     <nav>
         <div class="social-links">
-            <a href="https://twitter.com/GbrlszC">
+            <a href="https://twitter.com/GbrlszC"  target="_blank">
                 <i class="fab fa-twitter"></i>
                 Twitter
             </a>
             <span class="spacer"></span>
-            <a href="https://www.facebook.com/gabriel.costasaucedo/">
+            <a href="https://www.facebook.com/gabriel.costasaucedo/"  target="_blank">
                 <i class="fab fa-facebook"></i>
                 Facebook
             </a>
@@ -79,10 +79,10 @@
             </div>
         </div>
         <footer>
-            <p>Desenvolvido por <a href="https://github.com/zbillydim">Gabriel C.</a></p>
+            <p>Desenvolvido por <a href="https://github.com/zbillydim"  target="_blank">Gabriel C.</a></p>
             <p>
                 <i class="fab fa-github github-icon"></i>
-                <a href="https://github.com/zbillydim">GitHub</a>
+                <a href="https://github.com/zbillydim"  target="_blank">GitHub</a>
             </p>
         </footer>
     </div>
