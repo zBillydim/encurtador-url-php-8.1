@@ -68,7 +68,7 @@
                     $shortenedUrl = $_GET['shortened_url'];
 
                     if ($shortenedUrl !== 'Alias personalizado já existe.') {
-                        $baseUrl = 'http://gabrielDev.com/';
+                        $baseUrl = 'https://encurtador.up.railway.app/';
                         echo '<div class="success-message">URL encurtada com sucesso:</div>';
                         echo '<div class="shortened-url">' . $baseUrl . $shortenedUrl . '</div>';
                     } else {
