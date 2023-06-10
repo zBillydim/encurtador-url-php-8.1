@@ -20,9 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Redirecionar para a página inicial com a URL encurtada
     header("Location: index.php?shortened_url=$shortenedUrl");
     exit;
-}else{
+} else {
     $retorno['erro'] = true;
-    $retorno['msg'] = "Metodo não permitido, utilize post";
+    $retorno['msg'] = "Método não permitido, utilize POST";
     echo json_encode($retorno);
     http_response_code(400);
     exit();
@@ -57,6 +57,4 @@ function shortenURL($url, $customAlias = '', $expirationDate = '') {
 
     return $shortCode;
 }
-
-
 ?>
