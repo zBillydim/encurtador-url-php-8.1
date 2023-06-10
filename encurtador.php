@@ -20,6 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Redirecionar para a página inicial com a URL encurtada
     header("Location: index.php?shortened_url=$shortenedUrl");
     exit;
+}else{
+    return array(['err'] => 'true', ['msg'] => 'Metodo não permitido, utilize POST');
 }
 
 function generateShortCode($length = 6) {
