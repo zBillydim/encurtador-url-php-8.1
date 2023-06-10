@@ -5,7 +5,6 @@
     <title>Encurtador de URL</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-
 </head>
 <script>
     function formatarData(input) {
@@ -20,7 +19,6 @@
         input.value = inputValue;
     }
 </script>
-
 <body>
     <div class="wrapper">
     <nav>
@@ -68,9 +66,10 @@
                     $shortenedUrl = $_GET['shortened_url'];
 
                     if ($shortenedUrl !== 'Alias personalizado já existe.') {
-                        $baseUrl = 'https://encurtador.up.railway.app/';
+                        $baseUrl = 'https://gabdevserver.000webhostapp.com/';
+                        $shortenedURL = $baseUrl . $shortenedUrl;
                         echo '<div class="success-message">URL encurtada com sucesso:</div>';
-                        echo '<div class="shortened-url">' . $baseUrl . $shortenedUrl . '</div>';
+                        echo '<div class="shortened-url">'. $baseUrl . $shortenedUrl . '</div>';
                     } else {
                         echo '<div class="error-message">URL Personalizada já existe para este site.</div>';
                     }
