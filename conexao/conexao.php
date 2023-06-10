@@ -3,7 +3,7 @@ header_remove('set-cookie');
 header("Cache-Control: public, max-age=120");
 
 function conectaDb(){
-	$mysqli = new mysqli($_SERVER['HOST'].$_SERVER['PORT'], $_SERVER['LOGIN'], $_SERVER['PASSWORD'], $_SERVER['BASE']);
+	$mysqli = new mysqli($_SERVER['HOST'].':'.$_SERVER['PORT'], $_SERVER['LOGIN'], $_SERVER['PASSWORD'], $_SERVER['BASE']);
 	if ($mysqli->connect_errno) {
 	    echo "Em manutenção...";
 	    exit;
