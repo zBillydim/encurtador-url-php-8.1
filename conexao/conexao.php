@@ -1,8 +1,8 @@
 <?php
-define("config_db_host", "localhost");
+define("config_db_host", "containers-us-west-103.railway.app");
 define("config_db_login", "root");
-define("config_db_senha", "");
-define("config_db_base", "meubanco");
+define("config_db_senha", "es2kjXn0zZzHr1pA6sZe");
+define("config_db_base", "railway");
 header_remove('set-cookie');
 header("Cache-Control: public, max-age=120");
 
