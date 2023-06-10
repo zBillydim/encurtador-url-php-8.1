@@ -31,20 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
-        $originalUrl = $row['original_url'];
-        
-        $currentURL = $_SERVER['REQUEST_URI'];
-        $urlParts = explode('/', $currentURL);
-        $lastPart = end($urlParts);
-        
-        if ($lastPart === $originalUrl) {
-            // Redirecionar para a página de erro
-            header("Location: /index.html");
-            exit;
-        }
-        
-        // Redirecionar para a URL original
-        header("Location: " . $originalUrl);
+        header("Location: " . $row['original_url']);
         exit;
     }
 }
