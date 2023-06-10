@@ -42,7 +42,7 @@ function shortenURL($url, $customAlias = '', $expirationDate = '') {
     $conexao = conectaDb();
 
     if (!empty($customAlias)) {
-        $checkQuery = "SELECT * FROM meubanco_urls WHERE custom_url = '$customAlias'";
+        $checkQuery = "SELECT * FROM railway.url WHERE custom_url = '$customAlias'";
         $result = $conexao->query($checkQuery);
 
         if (mysqli_num_rows($result) > 0) {
@@ -52,7 +52,7 @@ function shortenURL($url, $customAlias = '', $expirationDate = '') {
 
     $shortCode = !empty($customAlias) ? $customAlias : generateShortCode();
 
-    $insertQuery = "INSERT INTO meubanco_urls (original_url, shortened_url, custom_url, expiration_date) VALUES ('$url', '$shortCode', '$customAlias', '$expirationDate')";
+    $insertQuery = "INSERT INTO railway.url (original_url, shortened_url, custom_url, expiration_date) VALUES ('$url', '$shortCode', '$customAlias', '$expirationDate')";
     $conexao->query($insertQuery);
 
     return $shortCode;
