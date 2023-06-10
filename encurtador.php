@@ -21,7 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Location: index.php?shortened_url=$shortenedUrl");
     exit;
 }else{
-    return print_r(array('err' => 'true', 'msg' => 'Método não permitido, utilize POST'));
+    $retorno['erro'] = true;
+    $retorno['msg'] = "Metodo não permitido, utilize post";
+    echo json_encode($retorno);
+    http_response_code(400);
+    exit();
 }
 
 function generateShortCode($length = 6) {
