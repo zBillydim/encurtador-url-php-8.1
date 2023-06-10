@@ -35,4 +35,4 @@ Em breve, hospedarei o código e ensinarei como você também pode fazer isso.
 OBS: consegui hospedar, falta inplementar o sistema de redirecionamento e criar o resto da documentação
 
 link para quem quiser ver: 
-https://encurtador.up.railway.app/index.php
+[LINK](https://gabdevserver.000webhostapp.com/)
