@@ -1,7 +1,7 @@
 <?php
-define("config_db_host", "containers-us-west-103.railway.app");
+define("config_db_host", "containers-us-west-71.railway.app");
 define("config_db_login", "root");
-define("config_db_senha", "es2kjXn0zZzHr1pA6sZe");
+define("config_db_senha", "NSuHzbJQLScB5jB0JMTT");
 define("config_db_base", "railway");
 header_remove('set-cookie');
 header("Cache-Control: public, max-age=120");
