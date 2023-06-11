@@ -32,7 +32,6 @@ Observação: Obviamente, as configurações não devem ficar na mesma pasta do 
 ### `Futuros updates`
 
 Em breve, hospedarei o código e ensinarei como você também pode fazer isso.
-OBS: consegui hospedar, falta inplementar o sistema de redirecionamento e criar o resto da documentação
+OBS: consegui hospedar, porém o redirect funciona apenas se pagar a hospedagem (tentei várias) a principio a railway não precisa pagar, estou estudando ela e aprendendo mas por enquanto deixei o site up no link abaixo.
 
-link para quem quiser ver: 
-https://encurtador.up.railway.app/index.php
+[LINK](https://gabdevserver.000webhostapp.com/)
