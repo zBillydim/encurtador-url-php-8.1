@@ -57,7 +57,10 @@ function shortenURL($url, $customAlias = '', $expirationDate = '') {
             return 'Alias personalizado já existe.';
         }
     }
-
+    if($expirationDate == ''){
+        $expirationDate = date('Y-m-d H:i:s', strtotime("+30 Days"));
+    }
+    
     $shortCode = !empty($customAlias) ? $customAlias : generateShortCode();
 
     $insertQuery = "INSERT INTO urls (original_url, shortened_url, custom_url, expiration_date) VALUES ('$url', '$shortCode', '$customAlias', '$expirationDate')";
